@@ -1,33 +1,41 @@
+@import url("https://fonts.googleapis.com/...");
 @import "tailwindcss";
 
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap');
-
 :root {
-  --gold: #C8A84B;
-  --gold-light: #E8CC7A;
-  --gold-dark: #A0832A;
-  --navy: #1A2744;
+  --gold: #c8a84b;
+  --gold-light: #e8cc7a;
+  --gold-dark: #a0832a;
+  --navy: #1a2744;
   --navy-light: #253666;
-  --navy-dark: #0F1A2E;
-  --cream: #FAF8F3;
-  --text-main: #1A2744;
-  --text-muted: #5A6580;
+  --navy-dark: #0f1a2e;
+  --cream: #faf8f3;
+  --text-main: #1a2744;
+  --text-muted: #5a6580;
 }
 
-* { box-sizing: border-box; }
-html { scroll-behavior: smooth; }
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
 body {
-  font-family: 'DM Sans', sans-serif;
+  font-family: "DM Sans", sans-serif;
   color: var(--text-main);
   background: var(--cream);
   -webkit-font-smoothing: antialiased;
 }
-h1, h2, h3, h4 { font-family: 'Playfair Display', serif; }
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Playfair Display", serif;
+}
 
 .btn-primary {
   background: var(--gold);
   color: var(--navy-dark);
-  font-family: 'DM Sans', sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-weight: 600;
   font-size: 0.875rem;
   letter-spacing: 0.08em;
@@ -35,16 +43,21 @@ h1, h2, h3, h4 { font-family: 'Playfair Display', serif; }
   padding: 0.75rem 2rem;
   border: none;
   cursor: pointer;
-  transition: background 0.2s, transform 0.15s;
+  transition:
+    background 0.2s,
+    transform 0.15s;
   display: inline-block;
   text-decoration: none;
 }
-.btn-primary:hover { background: var(--gold-dark); transform: translateY(-1px); }
+.btn-primary:hover {
+  background: var(--gold-dark);
+  transform: translateY(-1px);
+}
 
 .btn-outline {
   background: transparent;
   color: var(--gold);
-  font-family: 'DM Sans', sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-weight: 600;
   font-size: 0.875rem;
   letter-spacing: 0.08em;
@@ -56,10 +69,13 @@ h1, h2, h3, h4 { font-family: 'Playfair Display', serif; }
   display: inline-block;
   text-decoration: none;
 }
-.btn-outline:hover { background: var(--gold); color: var(--navy-dark); }
+.btn-outline:hover {
+  background: var(--gold);
+  color: var(--navy-dark);
+}
 
 .section-label {
-  font-family: 'DM Sans', sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-size: 0.75rem;
   font-weight: 600;
   letter-spacing: 0.15em;
@@ -67,15 +83,34 @@ h1, h2, h3, h4 { font-family: 'Playfair Display', serif; }
   color: var(--gold);
 }
 
-.divider-gold { width: 3rem; height: 2px; background: var(--gold); margin: 1rem 0; }
+.divider-gold {
+  width: 3rem;
+  height: 2px;
+  background: var(--gold);
+  margin: 1rem 0;
+}
 
 @keyframes fadeInUp {
-  from { opacity: 0; transform: translateY(24px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 @keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
-.animate-fadeInUp { animation: fadeInUp 0.7s ease forwards; }
-.animate-fadeIn { animation: fadeIn 0.8s ease forwards; }
+.animate-fadeInUp {
+  animation: fadeInUp 0.7s ease forwards;
+}
+.animate-fadeIn {
+  animation: fadeIn 0.8s ease forwards;
+}
