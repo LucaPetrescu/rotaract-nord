@@ -26,7 +26,7 @@ export default function Contact() {
         <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "4rem", alignItems: "start" }}>
           {/* Info */}
           <div>
-            <h3 style={{ fontFamily: "'Playfair Display', serif", fontSize: "1.4rem", color: "var(--navy)", marginBottom: "1.5rem" }}>
+            <h3 style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "1.4rem", color: "var(--navy)", marginBottom: "1.5rem" }}>
               Suntem aici pentru tine
             </h3>
             <p style={{ color: "var(--text-muted)", lineHeight: 1.9, marginBottom: "2.5rem" }}>
@@ -41,9 +41,9 @@ export default function Contact() {
             ].map((item) => (
               <div key={item.label} style={{ display: "flex", gap: "1rem", alignItems: "flex-start", marginBottom: "1.5rem" }}>
                 <div style={{
-                  width: "40px", height: "40px", background: "var(--navy)",
+                  width: "40px", height: "40px", background: "var(--gold)",
                   display: "flex", alignItems: "center", justifyContent: "center",
-                  color: "var(--gold)", flexShrink: 0,
+                  color: "#fff", flexShrink: 0,
                 }}>
                   {item.icon}
                 </div>
@@ -64,7 +64,7 @@ export default function Contact() {
                   href="#"
                   style={{
                     padding: "0.5rem 1rem",
-                    border: "1px solid rgba(200,168,75,0.3)",
+                    border: "1px solid rgba(232,24,93,0.2)",
                     color: "var(--navy)",
                     textDecoration: "none",
                     fontSize: "0.8rem",
@@ -79,7 +79,7 @@ export default function Contact() {
                   onMouseLeave={e => {
                     (e.currentTarget as HTMLElement).style.background = "transparent";
                     (e.currentTarget as HTMLElement).style.color = "var(--navy)";
-                    (e.currentTarget as HTMLElement).style.borderColor = "rgba(200,168,75,0.3)";
+                    (e.currentTarget as HTMLElement).style.borderColor = "rgba(232,24,93,0.2)";
                   }}
                 >
                   {s}
@@ -93,7 +93,7 @@ export default function Contact() {
             {sent ? (
               <div style={{ textAlign: "center", padding: "2rem" }}>
                 <div style={{ fontSize: "3rem", marginBottom: "1rem" }}>✅</div>
-                <h3 style={{ fontFamily: "'Playfair Display', serif", color: "var(--navy)", marginBottom: "0.5rem" }}>Mesaj trimis!</h3>
+                <h3 style={{ fontFamily: "'DM Sans', sans-serif", color: "var(--navy)", marginBottom: "0.5rem" }}>Mesaj trimis!</h3>
                 <p style={{ color: "var(--text-muted)" }}>Îți vom răspunde în cel mai scurt timp.</p>
               </div>
             ) : (

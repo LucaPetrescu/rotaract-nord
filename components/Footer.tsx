@@ -1,20 +1,28 @@
 "use client";
 import Link from "next/link";
 
+const navItems = [
+  { label: "Acasă", href: "/" },
+  { label: "Evenimente", href: "/evenimente" },
+  { label: "Proiecte", href: "/proiecte" },
+  { label: "Membri", href: "/membrii" },
+  { label: "Contact", href: "/contact" },
+];
+
 export default function Footer() {
   return (
-    <footer style={{ background: "var(--navy-dark)", padding: "3rem 2rem 1.5rem", borderTop: "1px solid rgba(200,168,75,0.15)" }}>
+    <footer style={{ background: "var(--navy-dark)", padding: "3rem 2rem 1.5rem", borderTop: "1px solid rgba(232,24,93,0.1)" }}>
       <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
         <div style={{ display: "grid", gridTemplateColumns: "2fr 1fr 1fr", gap: "3rem", marginBottom: "2.5rem" }}>
           {/* Brand */}
           <div>
             <div style={{ display: "flex", alignItems: "center", gap: "0.75rem", marginBottom: "1rem" }}>
               <svg width="32" height="32" viewBox="0 0 32 32">
-                <circle cx="16" cy="16" r="14" stroke="#C8A84B" strokeWidth="1.5" fill="none"/>
-                <circle cx="16" cy="16" r="6" fill="#C8A84B"/>
+                <circle cx="16" cy="16" r="14" stroke="#E8185D" strokeWidth="1.5" fill="none"/>
+                <circle cx="16" cy="16" r="6" fill="#E8185D"/>
               </svg>
               <div>
-                <div style={{ color: "#C8A84B", fontFamily: "'Playfair Display', serif", fontSize: "1rem", fontWeight: 600 }}>Rotaract</div>
+                <div style={{ color: "#E8185D", fontFamily: "'DM Sans', sans-serif", fontSize: "1rem", fontWeight: 600 }}>Rotaract</div>
                 <div style={{ color: "rgba(255,255,255,0.5)", fontSize: "0.65rem", letterSpacing: "0.12em", textTransform: "uppercase" }}>București Nord</div>
               </div>
             </div>
@@ -29,16 +37,16 @@ export default function Footer() {
             <div style={{ color: "rgba(255,255,255,0.6)", fontSize: "0.75rem", fontWeight: 600, letterSpacing: "0.12em", textTransform: "uppercase", marginBottom: "1rem" }}>
               Navigare
             </div>
-            {["Acasă", "Despre Noi", "Proiecte", "Echipă", "Membri", "Contact"].map(item => (
-              <a
-                key={item}
-                href={`#${item === "Acasă" ? "home" : item.toLowerCase().replace(" ", "")}`}
+            {navItems.map(item => (
+              <Link
+                key={item.href}
+                href={item.href}
                 style={{ display: "block", color: "rgba(255,255,255,0.45)", fontSize: "0.875rem", textDecoration: "none", marginBottom: "0.5rem", transition: "color 0.2s" }}
-                onMouseEnter={e => (e.currentTarget.style.color = "#C8A84B")}
+                onMouseEnter={e => (e.currentTarget.style.color = "#E8185D")}
                 onMouseLeave={e => (e.currentTarget.style.color = "rgba(255,255,255,0.45)")}
               >
-                {item}
-              </a>
+                {item.label}
+              </Link>
             ))}
           </div>
 
@@ -58,7 +66,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{ display: "block", color: "rgba(255,255,255,0.45)", fontSize: "0.875rem", textDecoration: "none", marginBottom: "0.5rem", transition: "color 0.2s" }}
-                onMouseEnter={e => (e.currentTarget.style.color = "#C8A84B")}
+                onMouseEnter={e => (e.currentTarget.style.color = "#E8185D")}
                 onMouseLeave={e => (e.currentTarget.style.color = "rgba(255,255,255,0.45)")}
               >
                 {l.label}

@@ -8,16 +8,16 @@ const team = [
   { name: "Ioana Stoica", role: "Director Comunicare", initials: "IS" },
 ];
 
-const colors = ["#1A2744", "#C8A84B", "#2E6B3E", "#2A5080", "#8B1A1A", "#6A3070"];
+const colors = ["#1A2744", "#E8185D", "#2E6B3E", "#2A5080", "#8B1A1A", "#6A3070"];
 
 export default function Team() {
   return (
-    <section id="echipa" style={{ background: "var(--navy)", padding: "7rem 2rem" }}>
+    <section id="echipa" style={{ background: "#fff", padding: "7rem 2rem" }}>
       <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
         <div style={{ textAlign: "center", marginBottom: "4rem" }}>
           <div className="section-label">Echipa Noastră</div>
           <div className="divider-gold" style={{ margin: "1rem auto" }} />
-          <h2 style={{ fontSize: "clamp(2rem, 4vw, 3rem)", fontWeight: 700, color: "#fff" }}>
+          <h2 style={{ fontSize: "clamp(2rem, 4vw, 3rem)", fontWeight: 700, color: "var(--navy)" }}>
             Comitetul{" "}
             <span style={{ fontStyle: "italic", color: "var(--gold)" }}>Director</span>
           </h2>
@@ -34,16 +34,16 @@ export default function Team() {
               style={{
                 textAlign: "center",
                 padding: "2rem 1rem",
-                border: "1px solid rgba(200,168,75,0.15)",
+                border: "1px solid rgba(232,24,93,0.1)",
                 transition: "border-color 0.2s, transform 0.2s",
                 cursor: "default",
               }}
               onMouseEnter={e => {
-                (e.currentTarget as HTMLElement).style.borderColor = "rgba(200,168,75,0.5)";
+                (e.currentTarget as HTMLElement).style.borderColor = "rgba(232,24,93,0.5)";
                 (e.currentTarget as HTMLElement).style.transform = "translateY(-3px)";
               }}
               onMouseLeave={e => {
-                (e.currentTarget as HTMLElement).style.borderColor = "rgba(200,168,75,0.15)";
+                (e.currentTarget as HTMLElement).style.borderColor = "rgba(232,24,93,0.1)";
                 (e.currentTarget as HTMLElement).style.transform = "translateY(0)";
               }}
             >
@@ -56,11 +56,11 @@ export default function Team() {
                 fontWeight: 600,
                 fontSize: "1.25rem",
                 color: "#fff",
-                border: "2px solid rgba(200,168,75,0.3)",
+                border: "2px solid rgba(232,24,93,0.2)",
               }}>
                 {m.initials}
               </div>
-              <h3 style={{ fontFamily: "'Playfair Display', serif", fontSize: "1.05rem", fontWeight: 600, color: "#fff", marginBottom: "0.4rem" }}>
+              <h3 style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "1.05rem", fontWeight: 600, color: "var(--navy)", marginBottom: "0.4rem" }}>
                 {m.name}
               </h3>
               <div style={{ fontSize: "0.78rem", color: "var(--gold)", letterSpacing: "0.06em", fontWeight: 500 }}>

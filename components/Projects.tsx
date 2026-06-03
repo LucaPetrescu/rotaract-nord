@@ -6,7 +6,7 @@ const projects = [
     title: "Ajutăm Împreună",
     desc: "Colectăm alimente, îmbrăcăminte și rechizite pentru familiile defavorizate din nordul Capitalei. O inițiativă lunară cu impact real în comunitate.",
     image: "🤲",
-    color: "#C8A84B",
+    color: "#E8185D",
   },
   {
     category: "Educație",
@@ -99,7 +99,7 @@ export default function Projects() {
                   <div style={{ fontSize: "0.7rem", fontWeight: 600, letterSpacing: "0.12em", textTransform: "uppercase", color: p.color, marginBottom: "0.25rem" }}>
                     {p.category}
                   </div>
-                  <h3 style={{ fontFamily: "'Playfair Display', serif", fontSize: "1.2rem", fontWeight: 600, color: "var(--navy)", margin: 0 }}>
+                  <h3 style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "1.2rem", fontWeight: 600, color: "var(--navy)", margin: 0 }}>
                     {p.title}
                   </h3>
                 </div>

@@ -2,15 +2,15 @@
 @import "tailwindcss";
 
 :root {
-  --gold: #c8a84b;
-  --gold-light: #e8cc7a;
-  --gold-dark: #a0832a;
-  --navy: #1a2744;
-  --navy-light: #253666;
-  --navy-dark: #0f1a2e;
-  --cream: #faf8f3;
-  --text-main: #1a2744;
-  --text-muted: #5a6580;
+  --gold: #e8185d;
+  --gold-light: #f04d85;
+  --gold-dark: #c01048;
+  --navy: #1a1a2e;
+  --navy-light: #2d2d4e;
+  --navy-dark: #110d16;
+  --cream: #fff5f8;
+  --text-main: #1a1a2e;
+  --text-muted: #6b7280;
 }
 
 * {
@@ -29,7 +29,7 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: "Playfair Display", serif;
+  font-family: "DM Sans", sans-serif;
 }
 
 .btn-primary {

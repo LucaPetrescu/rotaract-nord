@@ -39,7 +39,7 @@ export default function About() {
                 key={v.title}
                 style={{
                   background: "var(--cream)",
-                  border: "1px solid rgba(200,168,75,0.15)",
+                  border: "1px solid rgba(232,24,93,0.1)",
                   padding: "1.75rem",
                   transition: "border-color 0.2s, transform 0.2s",
                   cursor: "default",
@@ -49,12 +49,12 @@ export default function About() {
                   (e.currentTarget as HTMLElement).style.transform = "translateY(-3px)";
                 }}
                 onMouseLeave={e => {
-                  (e.currentTarget as HTMLElement).style.borderColor = "rgba(200,168,75,0.15)";
+                  (e.currentTarget as HTMLElement).style.borderColor = "rgba(232,24,93,0.1)";
                   (e.currentTarget as HTMLElement).style.transform = "translateY(0)";
                 }}
               >
                 <div style={{ fontSize: "1.75rem", marginBottom: "0.75rem" }}>{v.icon}</div>
-                <h3 style={{ fontFamily: "'Playfair Display', serif", fontSize: "1.1rem", fontWeight: 600, color: "var(--navy)", marginBottom: "0.5rem" }}>
+                <h3 style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "1.1rem", fontWeight: 600, color: "var(--navy)", marginBottom: "0.5rem" }}>
                   {v.title}
                 </h3>
                 <p style={{ fontSize: "0.85rem", color: "var(--text-muted)", lineHeight: 1.7 }}>{v.desc}</p>

@@ -26,14 +26,14 @@ export default function Join() {
             </p>
             <div style={{
               background: "var(--cream)",
-              border: "1px solid rgba(200,168,75,0.2)",
+              border: "1px solid rgba(232,24,93,0.15)",
               padding: "1.5rem",
               marginBottom: "2rem",
             }}>
               <div style={{ fontSize: "0.8rem", color: "var(--text-muted)", marginBottom: "0.5rem", fontWeight: 500 }}>
                 Urmăresc Ședință Lunară
               </div>
-              <div style={{ fontFamily: "'Playfair Display', serif", fontSize: "1.1rem", color: "var(--navy)", fontWeight: 600 }}>
+              <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "1.1rem", color: "var(--navy)", fontWeight: 600 }}>
                 Prima și a treia marți a fiecărei luni, ora 19:00
               </div>
             </div>
@@ -44,10 +44,10 @@ export default function Join() {
             {steps.map((s) => (
               <div key={s.num} style={{ display: "flex", gap: "1.5rem", alignItems: "flex-start" }}>
                 <div style={{
-                  fontFamily: "'Playfair Display', serif",
+                  fontFamily: "'DM Sans', sans-serif",
                   fontSize: "2rem",
                   fontWeight: 700,
-                  color: "rgba(200,168,75,0.25)",
+                  color: "rgba(232,24,93,0.2)",
                   lineHeight: 1,
                   flexShrink: 0,
                   width: "3rem",
@@ -55,7 +55,7 @@ export default function Join() {
                   {s.num}
                 </div>
                 <div>
-                  <h3 style={{ fontFamily: "'Playfair Display', serif", fontSize: "1.05rem", fontWeight: 600, color: "var(--navy)", marginBottom: "0.4rem" }}>
+                  <h3 style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "1.05rem", fontWeight: 600, color: "var(--navy)", marginBottom: "0.4rem" }}>
                     {s.title}
                   </h3>
                   <p style={{ color: "var(--text-muted)", fontSize: "0.9rem", lineHeight: 1.7, margin: 0 }}>{s.desc}</p>

@@ -7,7 +7,7 @@ export default function Hero() {
       id="home"
       style={{
         minHeight: "100vh",
-        background: "linear-gradient(160deg, #0F1A2E 0%, #1A2744 50%, #0F1A2E 100%)",
+        background: "linear-gradient(160deg, #fff 0%, #fff5f8 50%, #fff 100%)",
         display: "flex",
         alignItems: "center",
         position: "relative",
@@ -22,33 +22,33 @@ export default function Hero() {
         <div style={{
           position: "absolute", right: "-10%", top: "10%",
           width: "600px", height: "600px", borderRadius: "50%",
-          border: "1px solid rgba(200,168,75,0.12)",
+          border: "1px solid rgba(232,24,93,0.12)",
         }} />
         <div style={{
           position: "absolute", right: "-5%", top: "15%",
           width: "450px", height: "450px", borderRadius: "50%",
-          border: "1px solid rgba(200,168,75,0.08)",
+          border: "1px solid rgba(232,24,93,0.08)",
         }} />
         {/* Rotary wheel hint */}
         <svg style={{ position: "absolute", right: "5%", top: "50%", transform: "translateY(-50%)", opacity: 0.06 }}
           width="480" height="480" viewBox="0 0 480 480">
-          <circle cx="240" cy="240" r="220" stroke="#C8A84B" strokeWidth="3" fill="none"/>
-          <circle cx="240" cy="240" r="170" stroke="#C8A84B" strokeWidth="2" fill="none"/>
-          <circle cx="240" cy="240" r="80" stroke="#C8A84B" strokeWidth="3" fill="none"/>
+          <circle cx="240" cy="240" r="220" stroke="#E8185D" strokeWidth="3" fill="none"/>
+          <circle cx="240" cy="240" r="170" stroke="#E8185D" strokeWidth="2" fill="none"/>
+          <circle cx="240" cy="240" r="80" stroke="#E8185D" strokeWidth="3" fill="none"/>
           {[...Array(24)].map((_, i) => {
             const angle = (i * 15 * Math.PI) / 180;
             const x1 = 240 + 80 * Math.cos(angle);
             const y1 = 240 + 80 * Math.sin(angle);
             const x2 = 240 + 220 * Math.cos(angle);
             const y2 = 240 + 220 * Math.sin(angle);
-            return <line key={i} x1={x1} y1={y1} x2={x2} y2={y2} stroke="#C8A84B" strokeWidth="1.5"/>;
+            return <line key={i} x1={x1} y1={y1} x2={x2} y2={y2} stroke="#E8185D" strokeWidth="1.5"/>;
           })}
         </svg>
         {/* Bottom left ornament */}
         <div style={{
           position: "absolute", left: "-5%", bottom: "-5%",
           width: "350px", height: "350px", borderRadius: "50%",
-          border: "1px solid rgba(200,168,75,0.08)",
+          border: "1px solid rgba(232,24,93,0.08)",
         }} />
       </div>
 
@@ -70,7 +70,7 @@ export default function Hero() {
           <h1
             className="animate-fadeInUp"
             style={{
-              color: "#fff",
+              color: "var(--navy)",
               fontSize: "clamp(2.5rem, 6vw, 4.5rem)",
               fontWeight: 700,
               lineHeight: 1.1,
@@ -81,14 +81,14 @@ export default function Hero() {
             }}
           >
             Serviciu.{" "}
-            <span style={{ color: "#C8A84B", fontStyle: "italic" }}>Prietenie.</span>{" "}
+            <span style={{ color: "#E8185D", fontStyle: "italic" }}>Prietenie.</span>{" "}
             Schimbare.
           </h1>
 
           <p
             className="animate-fadeInUp"
             style={{
-              color: "rgba(255,255,255,0.65)",
+              color: "rgba(26,26,46,0.6)",
               fontSize: "1.125rem",
               lineHeight: 1.8,
               marginBottom: "2.5rem",
@@ -126,7 +126,7 @@ export default function Hero() {
               gap: "3rem",
               marginTop: "4rem",
               paddingTop: "2rem",
-              borderTop: "1px solid rgba(200,168,75,0.2)",
+              borderTop: "1px solid rgba(232,24,93,0.15)",
               animationDelay: "0.75s",
               opacity: 0,
               animationFillMode: "forwards",
@@ -139,10 +139,10 @@ export default function Hero() {
               { num: "2015", label: "Fondați" },
             ].map((s) => (
               <div key={s.label}>
-                <div style={{ color: "#C8A84B", fontFamily: "'Playfair Display', serif", fontSize: "2rem", fontWeight: 700 }}>
+                <div style={{ color: "#E8185D", fontFamily: "'DM Sans', sans-serif", fontSize: "2rem", fontWeight: 700 }}>
                   {s.num}
                 </div>
-                <div style={{ color: "rgba(255,255,255,0.5)", fontSize: "0.8rem", letterSpacing: "0.08em", textTransform: "uppercase", fontWeight: 400 }}>
+                <div style={{ color: "rgba(26,26,46,0.45)", fontSize: "0.8rem", letterSpacing: "0.08em", textTransform: "uppercase", fontWeight: 400 }}>
                   {s.label}
                 </div>
               </div>
@@ -159,7 +159,7 @@ export default function Hero() {
       }}>
         <div style={{
           width: "1px", height: "40px",
-          background: "linear-gradient(to bottom, transparent, #C8A84B)",
+          background: "linear-gradient(to bottom, transparent, #E8185D)",
           animation: "pulse 2s infinite",
         }} />
         <style>{`@keyframes pulse { 0%,100%{opacity:0.4} 50%{opacity:1} }`}</style>
