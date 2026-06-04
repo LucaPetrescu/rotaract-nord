@@ -7,7 +7,7 @@ const navLinks = [
   { label: "Acasă", href: "#home" },
   { label: "Despre Noi", href: "#despre" },
   { label: "Proiecte", href: "#proiecte" },
-  { label: "Echipă", href: "#echipa" },
+  { label: "Evenimente", href: "/evenimente" },
   { label: "Membri", href: "#membri" },
   { label: "Contact", href: "#contact" },
 ];
