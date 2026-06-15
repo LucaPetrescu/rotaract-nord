@@ -20,7 +20,7 @@ export default function Quote() {
 
       <div style={{ maxWidth: "800px", margin: "0 auto", position: "relative" }}>
         <div style={{ color: "var(--gold)", fontSize: "5rem", lineHeight: 0.8, marginBottom: "1.5rem", fontFamily: "'DM Sans', sans-serif", opacity: 0.4 }}>
-          "
+          &ldquo;
         </div>
         <blockquote style={{
           fontFamily: "'DM Sans', sans-serif",
